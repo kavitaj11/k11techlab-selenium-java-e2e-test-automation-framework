@@ -27,7 +27,7 @@
         <testViewChartLocation>bottom</testViewChartLocation>
 
         <!-- reportHeadline - displayed at top-nav -->
-        <reportHeadline>D2C Test Automation Report</reportHeadline>
+        <reportHeadline>K11 Tech Lab Test Automation Report</reportHeadline>
 
         <!-- global date format override -->
         <!-- defaults to yyyy-MM-dd -->
