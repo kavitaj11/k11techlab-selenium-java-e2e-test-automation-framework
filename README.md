@@ -50,6 +50,7 @@ POJOs (Plain Old Java Objects) that represent structured data (e.g., login crede
 
 
 
+
 🧩 Framework Capabilities & Extensibility - Built to Scale and Adapt
 A scalable enterprise-grade automation framework must support a wide range of testing types, integration points, and runtime environments while remaining modular and maintainable. This section outlines the key functional areas that make the framework robust, extensible, and CI/CD-ready.
 A scalable test automation framework must provide a consistent, reliable set of features to support robust and maintainable test coverage across systems and platforms.
