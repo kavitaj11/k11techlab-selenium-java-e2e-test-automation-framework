@@ -4,6 +4,7 @@ Scalable Selenium Test Automation Framework for Enterprise E2E Testing:
 This repository contains a modular, extensible, and CI/CD-ready test automation framework built using Selenium WebDriver, REST Assured, TestNG, Java, and Maven. Designed for large-scale enterprise applications, it supports robust end-to-end testing across UI, API, DB, and configuration layers.
 
 📌 Key Features
+
 ✅ Browser-Based UI Automation – Chrome, Firefox, Edge, Safari
 
 ✅ REST API Testing – REST Assured with fluent BDD-style syntax
@@ -24,7 +25,7 @@ This repository contains a modular, extensible, and CI/CD-ready test automation 
 
 
 🛠 Tech Stack
-Java 11+
+Java 8+
 
 Maven
 
@@ -36,11 +37,11 @@ SAAJ (SOAP)
 
 TestNG
 
-ExtentReports / Allure
+ExtentReports
 
 Log4j / SLF4J
 
-Jenkins / GitHub Actions
+Jenkins
 
 Sauce Labs
 
@@ -54,11 +55,11 @@ Email summary via JavaMail
 Step-by-step logs for debugging
 
 🌐 CI/CD Integration
-Test execution on every commit
-
-Build matrix for environment & browser combinations
 
 Works with Jenkins, GitHub Actions, GitLab CI
 
 🤝 Contributions
-Fork the repo → Create a branch → Submit a pull request 🚀
+Fork the repo → Create a branch → Submit a pull request
+
+
+
