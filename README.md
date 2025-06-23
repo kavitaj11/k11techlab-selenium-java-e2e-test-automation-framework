@@ -25,6 +25,7 @@ This repository contains a modular, extensible, and CI/CD-ready test automation 
 
 
 🛠 Tech Stack
+
 Java 8+
 
 Maven
