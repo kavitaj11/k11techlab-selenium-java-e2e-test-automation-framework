@@ -19,7 +19,7 @@ This repository contains a modular, extensible, and CI/CD-ready test automation 
 
 ✅ CI/CD Integration – Jenkins, GitHub Actions, GitLab, Sauce Labs
 
-✅ Logging & Reporting – Log4j, ExtentReports/Allure, with screenshots & email alerts
+✅ Logging & Reporting – Log4j, ExtentReports, with screenshots & email alerts
 
 ✅ Resilience – Retry logic, recovery scenarios, fail-safe cleanup
 
