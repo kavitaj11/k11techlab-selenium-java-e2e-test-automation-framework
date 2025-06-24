@@ -1,6 +1,6 @@
 package org.k11techlab.framework_unittests;
 
-import org.k11techlab.framework.selenium.coreframework.configManager.*;
+import org.k11techlab.framework.selenium.webuitestengine.configManager.*;
 import org.testng.annotations.Test;
 
 public class configurationManagerTests {

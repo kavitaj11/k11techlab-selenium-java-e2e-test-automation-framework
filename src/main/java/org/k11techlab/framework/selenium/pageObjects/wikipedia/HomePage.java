@@ -1,6 +1,6 @@
 package org.k11techlab.framework.selenium.pageObjects.wikipedia;
 
-import org.k11techlab.framework.selenium.coreframework.baseclasses.BasePage;
+import org.k11techlab.framework.selenium.webuitestbase.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
