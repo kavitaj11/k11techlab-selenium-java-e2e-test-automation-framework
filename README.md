@@ -22,7 +22,7 @@ Built entirely with open-source libraries, this framework is **fully extensible*
 
 ### 📊 High-Level Diagram
 
-![Selenium Automation Framework Architecture](testartifacts/assets/framework_architecture.png)
+![Selenium Automation Framework Architecture](testartifact/assets/framework_architecture.png)
 
 > *Selenium Automation Framework Architecture — © 2025 Kavita Jadhav. All rights reserved.*
 
