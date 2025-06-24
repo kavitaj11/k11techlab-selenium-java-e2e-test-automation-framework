@@ -27,7 +27,7 @@ import static java.lang.String.format;
 /**
  * Base page model class.
  */
-public class BaseTestPage {
+public class BaseTestPage extends BasePage {
 
     /**
      * WebDriver for this page.
@@ -59,6 +59,7 @@ public class BaseTestPage {
      * @param driver the web driver object
      */
     public BaseTestPage(WebDriver driver) {
+        super(driver);
         this.driver = driver;
         this.wait = new SeleniumWait(this.driver);
     }
@@ -745,7 +746,7 @@ public class BaseTestPage {
     }
 
     /**
-     * Verifys if the drop down menu contains the value, this will match using a
+     * verifies if the drop down menu contains the value, this will match using a
      * .contains comparison.
      *
      * @param locator the dropdown By selector
@@ -758,7 +759,7 @@ public class BaseTestPage {
     }
 
     /**
-     * Verifys if the drop down menu contains the value, this will match using a
+     * verifies if the drop down menu contains the value, this will match using a
      * .contains comparison.
      *
      * @param element the dropdown element
