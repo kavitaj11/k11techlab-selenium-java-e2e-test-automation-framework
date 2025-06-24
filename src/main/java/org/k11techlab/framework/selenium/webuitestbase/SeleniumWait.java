@@ -21,8 +21,7 @@ import java.time.Duration;
 /**
  * Class wrapper around wait functions.
  */
-public class
-SeleniumWait {
+public class SeleniumWait {
 
     /**
      * WebDriver for this page.
