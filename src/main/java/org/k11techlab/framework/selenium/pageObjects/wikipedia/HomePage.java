@@ -1,11 +1,12 @@
 package org.k11techlab.framework.selenium.pageObjects.wikipedia;
 
-import org.k11techlab.framework.selenium.webuitestbase.BasePage;
+
+import org.k11techlab.framework.selenium.webuitestbase.BaseTestPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePage extends BasePage {
+public class HomePage extends BaseTestPage {
     @FindBy(id = "searchInput")
     private WebElement searchInput;
 

@@ -333,7 +333,14 @@ public class ExcelDataProviderHelper {
 
             /* Create the workbook object to access excel file. */
             Workbook excelWorkBook = new HSSFWorkbook(fInputStream);
-            Sheet sheet = excelWorkBook.getSheet(_sheet);
+            Sheet sheet;
+            if (_sheet.matches("\\d+")) {
+                int sheetIndex = Integer.parseInt(_sheet);
+                sheet = excelWorkBook.getSheetAt(sheetIndex);
+            } else {
+                sheet = excelWorkBook.getSheet(_sheet);
+            }
+
             // Get current sheet data in a list table.
             sheetDataTable= getSheetDataList(sheet);
 

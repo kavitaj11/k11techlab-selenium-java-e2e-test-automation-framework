@@ -17,7 +17,7 @@ public class ExcelTestDataProvider {
         Log.debug("Initializing the test data");
         String dataPath= ApplicationProperties.TESTDATA_DIR.getStringVal();
         String dataFile = getDataFileNameFromAnnotation(method);
-        return ExcelDataProviderHelper.convertExcelDataToObjectArray(dataPath+dataFile, "csr");
+        return ExcelDataProviderHelper.convertExcelDataToObjectArray(dataPath+dataFile, "0");
 
     }
 

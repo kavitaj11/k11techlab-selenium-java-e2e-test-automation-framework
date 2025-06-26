@@ -1,3 +1,8 @@
+/*******************************************************************************
+ * Copyright 2025, K11 Software Solutions, All Rights Reserved.
+ * This source code is licensed under the MIT License.
+ * Author: Kavita Jadhav (kavita.jadhav.sdet@gmail.com)
+ ******************************************************************************/
 package org.k11techlab.framework.selenium.webuitestengine.configManager;
 
 import org.apache.commons.configuration2.CombinedConfiguration;

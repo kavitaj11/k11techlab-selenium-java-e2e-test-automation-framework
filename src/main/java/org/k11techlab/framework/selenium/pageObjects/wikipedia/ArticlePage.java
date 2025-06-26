@@ -1,12 +1,12 @@
 package org.k11techlab.framework.selenium.pageObjects.wikipedia;
 
-import org.k11techlab.framework.selenium.webuitestbase.BasePage;
+import org.k11techlab.framework.selenium.webuitestbase.BaseTestPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
-public class ArticlePage extends BasePage {
+public class ArticlePage extends BaseTestPage {
     @FindBy(id = "firstHeading")
     private WebElement heading;
 

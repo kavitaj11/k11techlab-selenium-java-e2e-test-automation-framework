@@ -14,20 +14,6 @@ import java.util.*;
 
 public class TestDataProviderHelper {
 
-        public static void main(String[] args)
-        {
-            // You can specify your excel file path.
-            String excelFilePath = ApplicationProperties.TESTDATA_DIR.getStringVal()+"k11_TestData.xls";
-
-            // This method will read each sheet data from above excel file and create a JSON and a text file to save the sheet data.
-            createJSONAndTextFileFromExcel(excelFilePath, "csr");
-           // readJsonObjectsFromFile(excelFilePath.replace(".xls", ".xls.json"));
-            Object[][] excelDataRowObjects= TestDataProviderHelper.convertExcelDataToObjectArray(excelFilePath, "csr");
-            System.out.println(excelDataRowObjects[0][0].toString());
-
-
-        }
-
 
         /* Read data from an excel file and output each sheet data to a json file and a text file.
          * filePath :  The excel file store path.
@@ -40,7 +26,13 @@ public class TestDataProviderHelper {
 
                 /* Create the workbook object to access excel file. */
                 Workbook excelWorkBook = new HSSFWorkbook(fInputStream);
-                Sheet sheet = excelWorkBook.getSheet(_sheet);
+                Sheet sheet;
+                if (_sheet.matches("\\d+")) {
+                    int sheetIndex = Integer.parseInt(_sheet);
+                    sheet = excelWorkBook.getSheetAt(sheetIndex);
+                } else {
+                    sheet = excelWorkBook.getSheet(_sheet);
+                }
                 // Get current sheet data in a list table.
                         List<List<String>> sheetDataTable = getSheetDataList(sheet);
 
@@ -449,4 +441,19 @@ public class TestDataProviderHelper {
         // Passing no arguments to exiting() because implementation to print 2D array could be highly recursive.
         return objArray;
     }
+
+    public static void main(String[] args)
+    {
+        // You can specify your excel file path.
+        String excelFilePath = ApplicationProperties.TESTDATA_DIR.getStringVal()+"k11_TestData.xls";
+
+        // This method will read each sheet data from above excel file and create a JSON and a text file to save the sheet data.
+        createJSONAndTextFileFromExcel(excelFilePath, "0");
+        // readJsonObjectsFromFile(excelFilePath.replace(".xls", ".xls.json"));
+        Object[][] excelDataRowObjects= TestDataProviderHelper.convertExcelDataToObjectArray(excelFilePath, "csr");
+        System.out.println(excelDataRowObjects[0][0].toString());
+
+
+    }
+
 }
