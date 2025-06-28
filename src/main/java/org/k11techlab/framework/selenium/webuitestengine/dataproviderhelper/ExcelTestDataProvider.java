@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 public class ExcelTestDataProvider {
 
 
-    @DataProvider(name = "k11-data-provider", parallel = true)
+    @DataProvider(name = "k11techlab-data-provider", parallel = true)
     public static Object[][] fetchExcelData(Method method){
         Log.debug("Initializing the test data");
         String dataPath= ApplicationProperties.TESTDATA_DIR.getStringVal();
